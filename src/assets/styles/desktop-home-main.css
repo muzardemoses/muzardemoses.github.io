@@ -1,0 +1,283 @@
+.desktop-home-main {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  background-image: url("../home/background-home-desktop.jpg");
+ min-height:  100vh;
+  height: unset;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Barlow", sans-serif;
+}
+
+.homie {
+  margin-left: 125px;
+  margin-right: 125px;
+  width: 100%;
+  margin-top: 387px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-a {
+  width: max-content;
+}
+
+.home-a-h3 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.home-a-h2 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 172px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.home-a-p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  color: #d0d6f9;
+  margin: 0px;
+}
+
+.home-b {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.815);
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 108px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-b:before {
+  content: "";
+  position: absolute;
+  top: 1;
+  left: 1;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-b:hover:before {
+  opacity: 0.1;
+}
+
+.home-b a {
+  text-decoration: none;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  /* identical to box height */
+
+  letter-spacing: 2px;
+
+  color: #0b0d17;
+
+  text-transform: uppercase;
+}
+
+.home-b a:first-of-type {
+  margin-left: 0px;
+}
+
+.home-b a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 1134px) {
+  .homie {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .desktop-home-main {
+    background-image: url("../home/background-home-tablet.jpg");
+	min-height: max-content;
+	height: unset;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .homie {
+    flex-direction: column;
+    margin-top: 202px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  .home-a-h3 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 3.375px;
+
+    color: #d0d6f9;
+  }
+
+  .home-a-h2 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150px;
+    /* identical to box height, or 100% */
+
+    color: #ffffff;
+  }
+
+  .home-a-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .home-b {
+    margin-left: auto;
+    margin-right: auto;
+    width: 242px;
+    height: 242px;
+	margin-bottom: 50px;
+  }
+  .home-b a {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+
+    letter-spacing: 2px;
+
+    color: #0b0d17;
+  }
+}
+
+@media (max-width: 490px) {
+  .desktop-home-main {
+    background-image: url("../home/background-home-mobile.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .homie {
+    margin-top: 115px;
+    margin-bottom: 48px;
+  }
+
+  .home-a-h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+  }
+
+  .home-a-h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .home-a-p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .home-b {
+    width: 150px;
+    height: 150px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    color: #0b0d17;
+    text-align: center;
+    letter-spacing: 1.25px;
+  }
+
+  .home-b a {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 1.25px;
+
+    color: #0b0d17;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-a{
+	width: 310px;
+	height: 140px;
+  }
+}

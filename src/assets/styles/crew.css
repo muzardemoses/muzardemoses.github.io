@@ -1,0 +1,344 @@
+.crew-main {
+  background-image: url("../crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  height: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.crew-h1 {
+  margin-top: 212px;
+  margin-left: 166.5px;
+}
+
+.role {
+  width: max-content;
+  text-align: center;
+
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+  margin-top: 0px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.c-content {
+  margin-left: 165.5px;
+  margin-top: 164px;
+}
+
+.name {
+  margin-top: 16px;
+  margin-bottom: 27px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.bio {
+  width: 444px;
+  margin-top: 0px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  margin-bottom: 0px;
+  color: #d0d6f9;
+}
+
+.c-image {
+  margin-top: 198px;
+  width: 568.07px;
+  height: 712px;
+  margin-right: 137px;
+}
+
+.small-button {
+  margin-left: 167px;
+  width: 132px;
+  height: 15px;
+  margin-top: 120px;
+}
+
+.small-b {
+  width: 15px;
+  height: 15px;
+  left: 206px;
+  margin-right: 17px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%);
+  mix-blend-mode: normal;
+  opacity: 0.17;
+  cursor: pointer;
+}
+
+.small-b-active {
+  width: 15px;
+  height: 15px;
+  left: 167px;
+  opacity: 5;
+  background: #ffffff;
+}
+
+.small-b:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1324px) {
+  .crew-h1 {
+    margin-left: 38.5px;
+  }
+
+  .c-content {
+    margin-left: 38.5px;
+  }
+
+  .small-button {
+    margin-left: 38.5px;
+  }
+
+  .c-image {
+    margin-right: 38.5px;
+    width: 468.07px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .crew-main {
+    background-image: url("../crew/background-crew-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: max-content;
+    height: unset;
+    flex-direction: column;
+  }
+
+  .crew-h1 {
+    margin-top: 136px;
+    margin-left: 38.5px;
+  }
+
+  .h1-text {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+    width: max-content;
+    color: #ffffff;
+  }
+
+  .c-content {
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .role {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 0px;
+  }
+
+  .name {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    /* identical to box height */
+    text-align: center;
+    align-self: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .bio {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+    text-align: center;
+    align-self: center;
+    width: 458px;
+  }
+
+  .small-button {
+    width: 132px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .second-half {
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-image {
+    width: 456.37px;
+    height: 33rem;
+    margin-top: 40px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 585px) {
+  .crew-main {
+    background-image: url("../crew/background-crew-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	min-height: 100vh;
+  }
+
+  .crew-h1 {
+    text-align: center;
+    margin-top: 88px;
+    margin-left: 0px;
+    order: 1;
+  }
+
+  .c-image {
+    width: 210px;
+    height: 223px;
+  
+  }
+
+  .second-half {
+	position: absolute;
+    margin-top: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+  
+  }
+
+  .first-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-content {
+    order: 3;
+	margin-top: 32px;
+	margin-bottom: 104px;
+  }
+
+  .small-button {
+    order: 2;
+    margin-top: 290px;
+  }
+
+  .role {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .name {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: #ffffff;
+  }
+
+  .bio {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* or 167% */
+    width: 327px;
+    text-align: center;
+    color: #d0d6f9;
+  }
+
+  .c-line {
+
+    width: 327px;
+    height: 2px;
+
+
+    background: #383b4b;
+  }
+}
+
+@media (max-width: 374px) {
+	.bio{
+		width: 290px;
+	}
+
+	.c-line{
+		width: 290px;
+	}
+}
+  

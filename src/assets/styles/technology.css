@@ -1,0 +1,312 @@
+.technology-main {
+  background-image: url("../technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  height: unset;
+}
+
+.tech-h1 {
+  margin-top: 212px;
+  margin-left: 166.5px;
+}
+
+.img-landscape {
+  display: none;
+}
+
+.tech-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  margin-left: 165px;
+}
+
+.t-but {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  mix-blend-mode: normal;
+  /* opacity: 0.25; */
+  border: 1px solid grey;
+  cursor: pointer;
+  color: white;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.t-but:hover {
+  border: 1px solid #ffffff;
+}
+
+.t-but-active {
+  color: black;
+  background-color: white;
+}
+
+.img-potrait {
+  mix-blend-mode: normal;
+}
+
+.techin {
+  width: 470px;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+.techin-h4 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.techin-h2 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: max-content;
+  margin-top: 11px;
+  margin-bottom: 17px;
+}
+
+.techin-p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  width: 445px;
+  color: #d0d6f9;
+  margin-top: 0px;
+}
+
+@media (max-width: 1324px) {
+  .tech-h1 {
+    margin-left: 40px;
+  }
+  .tech-list {
+    margin-left: 40px;
+  }
+  .img-potrait {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .technology-main {
+    background-image: url("../technology/background-technology-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: max-content;
+    height: unset;
+  }
+
+  .tech-h1 {
+    margin-top: 136px;
+    margin-left: 38.5px;
+    margin-bottom: 0px;
+  }
+
+  .techin {
+    height: 237px;
+    width: max-content;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-top: 44px;
+    margin-left: 0px;
+  }
+
+  .techin-h4 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
+    margin-top: 0px;
+  }
+
+  .techin-h2 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    color: #ffffff;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .techin-p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: center;
+    width: 430px;
+    color: #d0d6f9;
+  }
+
+  .tech-content {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
+
+  .tech-list {
+    flex-direction: row;
+    order: 2;
+    margin-left: 0px;
+    margin-top: 56px;
+  }
+
+  .t-but {
+    width: 60px;
+    height: 60px;
+  }
+
+  .img-potrait {
+    display: none;
+  }
+
+  .img-landscape {
+    display: block;
+    width: 100%;
+    height: 310px;
+    order: 1;
+  }
+}
+
+@media (max-width: 580px) {
+  .technology-main {
+    background-image: url("../technology/background-technology-mobile.jpg");
+    height: calc(100vh + 1px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .tech-h1 {
+    margin-top: 88px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .h1-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .num-d {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .tech-content {
+    margin-top: 32px;
+  }
+
+  .tech-list {
+    margin-top: 34px;
+  }
+
+  .techin {
+    margin-top: 26px;
+	width: 327px;
+  }
+
+  .t-but {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  
+  .img-landscape {
+    height: 170px;
+  }
+
+  .techin-p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+	width: 327px;
+  }
+
+  .techin-h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 2.3625px;
+  }
+
+  .techin-h2 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+	margin-top: 9px;
+	margin-bottom: 16px;
+  }
+
+ 
+}
+
