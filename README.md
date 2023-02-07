@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# GitHub Campus Hackathon Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [GitHub Campus Hackathon](https://education.github.com/pack) challenge.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [My process](#my-process)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Continued development](#continued-development)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Overview  
 
-### `npm test`
+This is a solution to the [GitHub Campus Hackathon](https://education.github.com/pack) challenge.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This Project is also a challenge from [Frontend Mentor](https://www.frontendmentor.io/).
 
-### `npm run build`
+The Project is a Space Tourism Website and it is built using React and tools from GitHub Student Developer Pack.
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### The challenge
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Users should be able to:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-### `npm run eject`
+### Screenshot
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![](./screenshot.JPG)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Links
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## My process
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Built with
 
-### Code Splitting
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### What I learned
 
-### Analyzing the Bundle Size
+```html
+<h1>Some HTML code I'm proud of 🎉</h1>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```css
+.proud-of-this-css {
+	color: papayawhip;
+}
+```
 
-### Making a Progressive Web App
+```js
+const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+const handleClick = () => {
+	const navLinks = document.querySelector(".nav-links");
+	navLinks.classList.toggle("open");
+	const linkItems = document.querySelectorAll(".link-item");
 
-### Advanced Configuration
+	linkItems.forEach((item) =>
+		item.addEventListener("click", () => navLinks.classList.remove("open"))
+	);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+	setIsMenuOpen((prev) => !prev);
+};
+```
 
-### Deployment
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I will continue to develope my css skills especially in  positioning areas and media queries to make my websites more responsive.
 
-### `npm run build` fails to minify
+I will also learn more on React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Author
+
+- GitHub - [@MuzardeMoses](https://github.com/MuzardeMoses)
+- Frontend Mentor - [@muzardemoses](https://www.frontendmentor.io/profile/muzardemoses)
+- Twitter - [@Muzarde1](https://www.twitter.com/Muzarde1)
+- LinkedIn - [Moses Adebayo](https://www.linkedin.com/in/muzardemoses/)
+- Instagram - [@muzardemoses](https://www.instagram.com/ademuzardemoses/)
+- Facebook - [Adebayo MuzardeMoses Olaoluwa ](https://facebook.com/ademuzardemoses)
+- YouTube - [MuzardeMoses](https://www.youtube.com/channel/UCg4W7cbWu6dW_8oJEHWaP9w)
+- Website - [MuzardeMoses](https://mosesadebayo.me/)
+
+
+## Acknowledgments
+
+I would like to thank [GitHub](https://github.com/) and [GitHub Campus ](https://githubcampus.expert/) for this opportunity to participate in this Hackathon.
+
+
+# muzardemoses.github.io
